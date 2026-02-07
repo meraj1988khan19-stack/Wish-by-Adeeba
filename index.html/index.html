@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Valentine Surprise 💖</title>
+
+<style>
+
+body{
+
+  margin:0;
+
+  font-family: Arial, sans-serif;
+
+  background:#ffe6f0;
+
+  text-align:center;
+
+}
+
+.page{
+
+  display:none;
+
+  padding:20px;
+
+  min-height:100vh;
+
+}
+
+.active{display:block;}
+
+img{
+
+  max-width:220px;
+
+  animation:float 2s infinite;
+
+  border-radius: 50px;
+
+}
+
+@keyframes float{
+
+  0%{transform:translateY(0)}
+
+  50%{transform:translateY(-10px)}
+
+  100%{transform:translateY(0)}
+
+}
+
+button,.box{
+
+  padding:12px 20px;
+
+  margin:10px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#ff4d88;
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+}
+
+.box{display:inline-block;}
+
+.grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:10px;
+
+}
+
+.frame1 {
+  background-image: url("../images.html/download\ \(0.2\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+.frame2 {
+  background-image: url("../images.html/download\ \(0.2\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+.frame3 {
+  background-image: url("../images.html/download\ \(0.2\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+.frame4 {
+  background-image: url("../images.html/download\ \(0.2\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+.frame5 {
+  background-image: url("../images.html/download\ \(0.2\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+.frame6 {
+  background-image: url("../images.html/download\ \(0.2\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+  0%{transform:scale(1)}
+
+  50%{transform:scale(1.05)}
+
+  100%{transform:scale(1)}
+
+}
+
+.video{
+
+  height:200px;
+
+  background:black;
+
+  color:white;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  margin:20px auto;
+
+  width:80%;
+
+}
+
+.mu {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="p1">
+
+<img src="../images.html/download (1).jpg">
+
+<h2>Will you be mine? 💖</h2>
+
+<p>Life is an incredible journey and I want to spend every single second of it with you</p>
+
+<button onclick="go(2)">Yes</button>
+
+<button onclick="go(2)">No</button>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="page" id="p2">
+
+<img src="../images.html/download (2).jpg">
+
+<h2>Think again 🤭</h2>
+
+<button onclick="go(3)">Yes</button>
+
+<button onclick="go(3)">No</button>
+
+</div>
+
+<!-- PAGE 3 -->
+
+<div class="page" id="p3">
+
+<img src="../images.html/download (3).jpg">
+
+<h2>Are you sure? 😏</h2>
+
+<button onclick="go(4)">Yes</button>
+
+<button onclick="go(4)">No</button>
+
+</div>
+
+<!-- PAGE 4 -->
+
+<div class="page" id="p4">
+
+<img src="../images.html/download (4).jpg">
+
+<h2>See this 😼</h2>
+
+<button onclick="go(5)">Yes</button>
+
+<button onclick="go(5)">No</button>
+
+</div>
+
+<!-- PAGE 5 -->
+
+<div class="page" id="p5">
+
+<img src="../images.html/download (5).jpg">
+
+<h2>Happy Valentine’s Day 💕</h2>
+
+<p>
+
+Every sec with you is a celebration,  
+
+you are the spark that makes my world so much brighter!
+
+</p>
+
+<button onclick="go(6)">See My Gift 🎁</button>
+
+</div>
+
+<!-- PAGE 6 -->
+
+<div class="page" id="p6">
+
+<h2>Something for you 💝</h2>
+
+<div class="box" onclick="go(7)">🎁 Gift 1</div>
+
+<div class="box" onclick="go(11)">🎁 Gift 2</div>
+
+<div class="box" onclick="go(12)">🎁 Gift 3</div>
+
+<div class="box" onclick="go(13)">✨ Finally</div>
+
+</div>
+
+<!-- PAGE 7 QUIZ 1 -->
+
+<div class="page" id="p7">
+
+<h2>Quiz for you 🤔</h2>
+
+<p>What is the absolute boss in this relationship? 😌</p>
+
+<div class="box" onclick="go(8)">Obviously you</div>
+
+<div class="box" onclick="oops()">Me</div>
+
+<div class="box" onclick="oops()">My mom</div>
+
+<button onclick="go(6)">Back</button>
+
+</div>
+
+<!-- PAGE 8 QUIZ 2 -->
+
+<div class="page" id="p8">
+
+<h2>Quiz for you 😄</h2>
+
+<p>What fight a lot in this relationship? 😂</p>
+
+<div class="box" onclick="oops()">Always you</div>
+
+<div class="box" onclick="oops()">No one</div>
+
+<div class="box" onclick="go(9)">Me</div>
+
+<button onclick="go(6)">Back</button>
+
+</div>
+
+<!-- PAGE 9 QUIZ 3 -->
+
+<div class="page" id="p9">
+
+<h2>Quiz for you 💭</h2>
+
+<p>Where do I plan to spend the rest of my life? 💖</p>
+
+<div class="box" onclick="oops()">Paris</div>
+
+<div class="box" onclick="go(10)">In my heart</div>
+
+<div class="box" onclick="oops()">On Mars</div>
+
+<button onclick="go(6)">Back</button>
+
+</div>
+
+<!-- PAGE 10 -->
+
+<div class="page" id="p10">
+
+<h2>Yay 🎉</h2>
+
+<p>You passed the test, you really love me ❤️</p>
+
+<button onclick="go(6)">Back</button>
+
+</div>
+
+<!-- PAGE 11 LETTER -->
+
+<div class="page" id="p11">
+
+<h2><b>A letter for you 💌</b></h2>
+
+<p>
+
+<b>My friend 😘</b><br><br>
+
+Thank you for being my person. I want to hold your hand through every season of life.
+
+You are my life, my everything and I love you so much.
+
+<br><br>
+
+Sorry for irritating and hurting you.
+
+No one can replace you from my heart, you’ll always be my no 1.
+
+<br><br>
+
+<b>Forever ♾️</b>
+
+</p>
+
+<button onclick="go(6)">Back</button>
+
+</div>
+
+<!-- PAGE 12 GALLERY -->
+
+<div class="page" id="p12">
+
+<h2>Look at this handsome 😍</h2>
+
+<div class="grid">
+
+<div class="frame1">
+    <p class="mu">My world</p>
+</div>
+
+<div class="frame2">
+    <p class="mu">My love</p>
+</div>
+
+<div class="frame3">
+    <p class="mu">My smile</p>
+</div>
+
+<div class="frame4">
+    <p class="mu">My best buddy</p>
+</div>
+
+<div class="frame5">
+    <p class="mu">My forever</p>
+</div>
+
+<div class="frame6">
+    <p class="mu">My everything</p>
+</div>
+
+</div>
+
+<button onclick="go(6)">Back</button>
+
+</div>
+
+<!-- PAGE 13 FINAL -->
+
+<div class="page" id="p13">
+
+<h2><b>You are my Forever 🧿❤️</b></h2>
+
+<div class="video">
+    <video width="100%" height="100%" controls>
+        <source src="../images.html/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+</div>
+
+<p>
+
+I love you more than words can say ❤️<br><br>
+
+No matter where life takes us, my heart will always choose you.
+
+Thank you for being my peace 🕊️, my smile and my love 💕
+
+This Valentine’s Day and every day after.
+
+</p>
+
+<p><b>I'm grateful to call you mine ❤️</b></p>
+
+<button onclick="go(1)">Replay</button>
+
+</div>
+
+<script>
+
+function go(n){
+
+ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+
+ document.getElementById('p'+n).classList.add('active');
+
+}
+
+function oops(){
+
+ alert("Oops 😅 Try again!");
+
+}
+
+</script>
+
+</body>
+
+</html>
